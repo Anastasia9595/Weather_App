@@ -1,0 +1,169 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap"); */
+
+@font-face {
+  font-family: "Regular";
+  src: local("SpaceGrotesk-Regular"),
+    url("./assets/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Light";
+  src: local("SpaceGrotesk-Light"),
+    url("./assets/fonts/SpaceGrotesk-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Medium";
+  src: local("SpaceGrotesk-Medium"),
+    url("./assets/fonts/SpaceGrotesk-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bold";
+  src: local("SpaceGrotesk-Bold"),
+    url("./assets/fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Regular", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.app:before {
+  content: "";
+  background: url("./assets/jake-hills-mI02K_LxlfU-unsplash.jpg") no-repeat
+    center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .search {
+  text-align: center;
+  padding: 2rem;
+}
+
+.app input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 1.56rem;
+  border: 0.06rem solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  max-width: 43.75rem;
+  height: 43.75rem;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.app .description {
+  position: relative;
+  right: -80%;
+}
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bold {
+  font-family: "Bold";
+}
+
+.popup {
+  position: absolute;
+  width: 25rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 1.87rem 1.87rem;
+  color: #333;
+}
+
+.image_container {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin: 0 auto;
+  margin-top: -3rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.popup img {
+  width: 6.25rem;
+  padding: 0.5rem;
+}
+
+.popup h2 {
+  font-size: 1.5rem;
+  margin: 0.2rem 0;
+}
+
+.popup button {
+  width: 70%;
+  margin-top: 2.125rem;
+  padding: 0.75rem 0;
+  background-color: #f33232;
+  color: #fff;
+  border: 0;
+  outline: none;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
